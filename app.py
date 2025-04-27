@@ -29,7 +29,7 @@ def get_cyberattaques():
 @app.route('/api/events', methods=['GET'])
 def get_events():
     data = get_cyberattaques()
-    return data["cyberattaques_france_2022"]["couts"]["details"]
+    return data["cyberattaques_france_2022"]
 
 @app.route('/api/news', methods=['GET'])
 def get_new():

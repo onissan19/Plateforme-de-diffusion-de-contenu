@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-app-deployment
+  name: diffus-api-deployment
   labels:
     app: flask-app
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: flask-container
-        image: <TON_REGISTRY>/flask-app:latest  # Remplacer <TON_REGISTRY> par ton vrai Azure Container Registry (ACR)
+        image: flaskapi.azurecr.io/diffus_api:latest  # L'image de ton ACR
         ports:
         - containerPort: 5000
         envFrom:
@@ -24,3 +24,5 @@ spec:
             name: flask-config
         - secretRef:
             name: flask-secrets  # Ajout du Secret pour les variables sensibles
+      imagePullSecrets:
+      - name: acr-auth  # Utilisation du secret acr-auth pour l'authentification
