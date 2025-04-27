@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: flask-config
+data:
+  CONTAINER_NAME: app
+  JSON_NAME: static_content.json

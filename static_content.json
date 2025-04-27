@@ -1,0 +1,26 @@
+{
+    "cyberattaques_france_2022": {
+      "nombre_total_attaques": 385000,
+      "repartition": {
+        "entreprises": {
+          "total": 347000,
+          "PME": 330000,
+          "grandes_entreprises": 17000
+        },
+        "organisations_publiques": 37000
+      },
+      "couts": {
+        "total": "2 milliards d'euros",
+        "details": {
+          "couts_directs": "887 millions d'euros",
+          "rançons": "888 millions d'euros",
+          "heures_travail_perdues": "7 millions d'euros"
+        }
+      },
+      "statistiques_complementaires": {
+        "pourcentage_organisations_touchees": "43%",
+        "moyenne_attaques_par_organisation": 4.3,
+        "attaques_signalees_ANSSI": 831
+      }
+    }
+}
